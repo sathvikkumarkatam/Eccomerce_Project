@@ -108,6 +108,11 @@ These can be added in later phases.
 - Role-based dashboard routing.
 - Password reset using email OTP.
 - JWT-based session management.
+- Login page includes a role selector for customer, seller, and admin.
+- Customer login opens the customer home shopping dashboard.
+- Seller login opens Growth Studio.
+- Admin login opens the moderation and platform dashboard.
+- The UI should show inline validation, forgot password, create account, and optional remember-me controls.
 
 ### 9.2 Product Catalog Module
 
@@ -176,6 +181,16 @@ These can be added in later phases.
 - Refund and dispute control.
 - Platform analytics.
 
+### 9.10 Advanced UI Module
+
+- Glass-style sticky header with search, navigation, and live cart count.
+- Premium hero section with a dark product showcase stage.
+- Animated product cards with trust, resale, and carbon signals.
+- Sticky command rail for cart, checkout, Product Passport, Social Cart, and Trade-In Wallet.
+- Login screen with role-based access for customer, seller, and admin.
+- Growth Studio dashboard with metric cards, animated chart, AI recommendations, and admin queue.
+- Motion system includes reveal-on-scroll, hover lift, progress transitions, cart flash, and AI result flash.
+
 ## 10. High-Level Working Flow
 
 ```mermaid
@@ -232,4 +247,3 @@ flowchart TD
 - Real seller onboarding
 - Customer support workflow
 - Analytics and fraud detection
-

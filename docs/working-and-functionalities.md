@@ -7,23 +7,54 @@ LoopCart works as a multi-role ecommerce platform. The customer side focuses on 
 ## 2. Customer Working Flow
 
 1. Customer signs up or logs in.
-2. Customer lands on the personalized home page.
-3. Customer can search manually or use AI Cart Concierge.
-4. Product cards show price, rating, seller, delivery estimate, sustainability score, and resale eligibility.
-5. Customer opens a product detail page.
-6. Customer checks Product Passport before buying.
-7. Customer adds product to cart or wishlist.
-8. Customer can create or join a Social Cart for group discount.
-9. Customer selects delivery option:
+2. Customer selects the customer role on the login page.
+3. Customer lands on the personalized home page.
+4. Customer can search manually or use AI Cart Concierge.
+5. Product cards show price, rating, seller trust, carbon score, and resale eligibility.
+6. Customer opens a product detail page.
+7. Customer checks Product Passport before buying.
+8. Customer adds product to cart or wishlist.
+9. Customer can create or join a Social Cart for group discount.
+10. Customer selects delivery option:
    - Fast delivery
    - Standard delivery
    - Delay-To-Save delivery
-10. Customer applies coupon or wallet credit.
-11. Customer places order.
-12. Customer tracks order status.
-13. Customer reviews the product.
-14. Product becomes available in Trade-In Wallet after return window closes.
-15. Customer can resell, trade in, repair, or donate the product.
+11. Customer applies coupon or wallet credit.
+12. Customer places order.
+13. Customer tracks order status.
+14. Customer reviews the product.
+15. Product becomes available in Trade-In Wallet after return window closes.
+16. Customer can resell, trade in, repair, or donate the product.
+
+## 2.1 Login Page Working Flow
+
+1. User opens the LoopCart login page.
+2. User enters email and password.
+3. User selects role:
+   - Customer
+   - Seller
+   - Admin
+4. System validates required fields.
+5. System verifies account credentials.
+6. System checks account status.
+7. System redirects based on role:
+   - Customer goes to customer home.
+   - Seller goes to Growth Studio.
+   - Admin goes to admin dashboard.
+8. If login fails, inline error messages appear below the related field.
+
+Login page UI requirements:
+
+- Glass login card on the left.
+- Dark trust preview panel on the right.
+- Role selector using segmented buttons.
+- Email and password inputs.
+- Password visibility toggle.
+- Remember-me option.
+- Forgot password link.
+- Create account link.
+- Primary login button using teal-to-blue gradient.
+- Security preview showing wallet, seller trust, and role-based access benefits.
 
 ## 3. Seller Working Flow
 
@@ -177,6 +208,19 @@ Example:
 | Usability | Customer should reach checkout in 3 to 5 clicks from product page. |
 | Accessibility | Color contrast, keyboard navigation, semantic HTML, readable labels. |
 | Maintainability | Separate frontend, backend, services, and database layers. |
+| Motion | Animations should be smooth, short, and respect reduced-motion settings. |
+
+## 9.1 Advanced UI Working Notes
+
+The updated frontend is designed as a premium ecommerce workspace:
+
+- Header stays sticky and uses a glass background.
+- Hero section shows the brand promise, key metrics, and a dark product showcase.
+- AI Concierge generates a smart bundle and updates cart totals.
+- Product cards animate on hover and show trust, resale, and carbon metrics.
+- Command rail keeps checkout, Product Passport, Social Cart, and Trade-In Wallet visible.
+- Social Cart progress bar updates when invited members join.
+- Growth Studio uses metric cards, animated bar chart, and AI insight cards.
 
 ## 10. Success Metrics
 
@@ -189,4 +233,3 @@ Example:
 - Seller TrustScore improvement
 - Return rate reduction
 - Average order value
-

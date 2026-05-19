@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-label="LoopCart advanced login page mockup">
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset=".48" stop-color="#eef6f7"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="inkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101522"/>
+      <stop offset="1" stop-color="#263654"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0fa6a6"/>
+      <stop offset="1" stop-color="#436fe8"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff6b5f"/>
+      <stop offset="1" stop-color="#f4b83f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#101522" flood-opacity=".16"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#101522" flood-opacity=".08"/>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#101522" stroke-opacity=".035" stroke-width="1"/>
+    </pattern>
+    <style>
+      .surface{fill:#fff;stroke:#e4e9f2;stroke-width:2}.glass{fill:#fff;fill-opacity:.86;stroke:#e4e9f2;stroke-width:2}.ink{fill:#101522}.slate{fill:#4a5568}.muted{fill:#7a8495}.teal{fill:#0fa6a6}.coral{fill:#ff6b5f}.amber{fill:#f4b83f}.blue{fill:#436fe8}.mint{fill:#dff8ee}.rose{fill:#fff0ee}.title{font:900 44px Inter,Arial,sans-serif}.h2{font:900 25px Inter,Arial,sans-serif}.h3{font:850 18px Inter,Arial,sans-serif}.body{font:500 15px Inter,Arial,sans-serif}.small{font:800 12px Inter,Arial,sans-serif}.micro{font:900 10px Inter,Arial,sans-serif;text-transform:uppercase}.btn{fill:#fff;font:850 13px Inter,Arial,sans-serif}.chipText{font:850 12px Inter,Arial,sans-serif}
+    </style>
+  </defs>
+  <rect width="1440" height="1080" fill="url(#page)"/>
+  <rect width="1440" height="1080" fill="url(#grid)"/>
+  <text x="72" y="52" class="micro teal">Advanced Figma screen 05</text>
+  <text x="72" y="88" class="title ink">LoopCart Login Page</text>
+  <text x="72" y="118" class="body slate">Authentication screen for customer, seller, and admin roles using the same premium glass UI system.</text>
+
+  <rect x="72" y="150" width="1296" height="72" rx="14" class="glass" filter="url(#soft)"/>
+  <rect x="100" y="166" width="42" height="42" rx="8" fill="url(#inkGrad)"/>
+  <text x="111" y="193" fill="#fff" class="small">LC</text>
+  <text x="154" y="193" class="h3 ink">LoopCart</text>
+  <text x="1034" y="193" class="small ink">Marketplace</text>
+  <text x="1144" y="193" class="small ink">Seller</text>
+  <rect x="1224" y="164" width="98" height="44" rx="8" fill="url(#inkGrad)"/>
+  <text x="1252" y="191" class="btn">Sign up</text>
+
+  <g filter="url(#shadow)">
+    <rect x="112" y="280" width="580" height="610" rx="8" class="glass"/>
+  </g>
+  <text x="158" y="352" class="micro teal">Secure access</text>
+  <text x="158" y="406" class="title ink">Welcome back to LoopCart.</text>
+  <text x="158" y="448" class="body slate">Sign in to continue shopping, manage seller orders, or open the admin Growth Studio.</text>
+
+  <rect x="158" y="500" width="488" height="54" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+  <text x="182" y="522" class="small muted">Email address</text>
+  <text x="182" y="544" class="body slate">nandi@example.com</text>
+  <rect x="158" y="578" width="488" height="54" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+  <text x="182" y="600" class="small muted">Password</text>
+  <text x="182" y="622" class="body slate">************</text>
+
+  <g transform="translate(158 656)">
+    <rect width="138" height="38" rx="19" fill="#101522"/>
+    <text x="34" y="25" class="btn">Customer</text>
+    <rect x="150" width="102" height="38" rx="19" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="180" y="25" class="small slate">Seller</text>
+    <rect x="264" width="98" height="38" rx="19" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="296" y="25" class="small slate">Admin</text>
+  </g>
+
+  <rect x="158" y="724" width="488" height="54" rx="8" fill="url(#cta)"/>
+  <text x="360" y="758" class="btn">Login</text>
+  <text x="158" y="816" class="small teal">Forgot password?</text>
+  <text x="458" y="816" class="small slate">New to LoopCart? Create account</text>
+
+  <g filter="url(#shadow)">
+    <rect x="748" y="280" width="580" height="610" rx="8" fill="#172033"/>
+  </g>
+  <path d="M748 280h580v610H748z" fill="url(#grid)" opacity=".24"/>
+  <text x="798" y="350" class="micro teal">Live trust preview</text>
+  <text x="798" y="402" class="title" fill="#fff">One login, role-aware dashboards.</text>
+  <text x="798" y="448" class="body" fill="#d7deea">Customers land on smart shopping. Sellers open Growth Studio. Admins move directly into moderation and analytics.</text>
+
+  <rect x="798" y="508" width="222" height="124" rx="8" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+  <text x="824" y="546" class="small" fill="#d7deea">Customer wallet</text>
+  <text x="824" y="594" class="h2" fill="#fff">$82</text>
+  <rect x="1054" y="508" width="222" height="124" rx="8" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+  <text x="1080" y="546" class="small" fill="#d7deea">Seller trust</text>
+  <text x="1080" y="594" class="h2" fill="#fff">91</text>
+
+  <rect x="798" y="672" width="478" height="96" rx="8" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+  <text x="824" y="710" class="h3" fill="#fff">Security states</text>
+  <text x="824" y="742" class="body" fill="#d7deea">Email validation, password visibility toggle, remember me, forgot password, and role-based redirect.</text>
+  <rect x="798" y="806" width="312" height="8" rx="4" fill="#fff" fill-opacity=".16"/>
+  <rect x="798" y="806" width="216" height="8" rx="4" fill="url(#warm)"/>
+</svg>
