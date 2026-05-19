@@ -2,6 +2,7 @@ package com.loopcart.app.controllers;
 
 import com.loopcart.app.models.DTO.LoginRequest;
 import com.loopcart.app.models.DTO.LoginResponse;
+import com.loopcart.app.models.DTO.RegisterRequest;
 import com.loopcart.app.models.User;
 import com.loopcart.app.services.UserService;
 import jakarta.validation.Valid;
@@ -17,9 +18,9 @@ public class AuthenticationController
         this.userService = userService;
     }
     @PostMapping("/register")
-    public User register(@Valid @RequestBody User user)
+    public User register(@Valid @RequestBody RegisterRequest request)
     {
-        return userService.register(user);
+        return userService.register(request);
     }
 
     @PostMapping("/login")

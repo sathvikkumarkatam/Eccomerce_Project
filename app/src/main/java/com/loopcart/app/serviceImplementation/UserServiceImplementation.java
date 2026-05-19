@@ -2,6 +2,7 @@ package com.loopcart.app.serviceImplementation;
 
 import com.loopcart.app.models.DTO.LoginRequest;
 import com.loopcart.app.models.DTO.LoginResponse;
+import com.loopcart.app.models.DTO.RegisterRequest;
 import com.loopcart.app.models.User;
 import com.loopcart.app.repositories.UserRepo;
 import com.loopcart.app.services.UserService;
@@ -23,11 +24,19 @@ public class UserServiceImplementation implements UserService
     }
 
     @Override
-    public User register(User user)
+    public User register(RegisterRequest request)
     {
-        if (user.getPasswordHash() != null && !user.getPasswordHash().isBlank()) {
-            user.setPasswordHash(passwordEncoder.encode(user.getPasswordHash()));
+        if (userRepo.findByEmail(request.getEmail()).isPresent()) {
+            throw new IllegalArgumentException("Email is already registered");
         }
+
+        User user = new User(
+                request.getFullName(),
+                request.getEmail(),
+                request.getPhone(),
+                passwordEncoder.encode(request.getPassword()),
+                request.getRole()
+        );
 
         return userRepo.save(user);
     }
