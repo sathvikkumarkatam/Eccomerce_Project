@@ -29,19 +29,32 @@ LoopCart works as a multi-role ecommerce platform. The customer side focuses on 
 ## 2.1 Login Page Working Flow
 
 1. User opens the LoopCart login page.
-2. User enters email and password.
-3. User selects role:
+2. User chooses email/password login or OAuth login.
+3. For email/password login, user enters email and password.
+4. User selects role:
    - Customer
    - Seller
    - Admin
-4. System validates required fields.
-5. System verifies account credentials.
-6. System checks account status.
-7. System redirects based on role:
+5. System validates required fields.
+6. System verifies account credentials.
+7. System checks account status.
+8. System redirects based on role:
    - Customer goes to customer home.
    - Seller goes to Growth Studio.
    - Admin goes to admin dashboard.
-8. If login fails, inline error messages appear below the related field.
+9. If login fails, inline error messages appear below the related field.
+
+OAuth login working flow:
+
+1. User clicks Google, Microsoft, or GitHub.
+2. Backend redirects user to the selected OAuth provider.
+3. User approves access on the provider screen.
+4. Provider redirects back to LoopCart with an authorization code.
+5. Backend exchanges code for provider user information.
+6. Backend finds an existing user by provider id or verified email.
+7. If user exists, backend logs in the user.
+8. If user does not exist, backend creates a user profile with default customer role or asks the user to choose customer/seller.
+9. Backend creates JWT tokens and redirects to the correct dashboard.
 
 Login page UI requirements:
 
@@ -50,11 +63,48 @@ Login page UI requirements:
 - Role selector using segmented buttons.
 - Email and password inputs.
 - Password visibility toggle.
+- OAuth buttons for Google, Microsoft, and GitHub.
 - Remember-me option.
 - Forgot password link.
 - Create account link.
 - Primary login button using teal-to-blue gradient.
 - Security preview showing wallet, seller trust, and role-based access benefits.
+
+## 2.2 Registration Page Working Flow
+
+1. User opens the registration page.
+2. User enters full name, phone, email, password, and confirm password.
+3. User selects account type:
+   - Customer
+   - Seller
+4. User accepts terms and privacy policy.
+5. System validates input fields.
+6. System checks if email already exists.
+7. System creates account.
+8. Customer account receives email verification and then redirects to customer home.
+9. Seller account redirects to seller onboarding for store details, business documents, and admin approval.
+
+OAuth registration working flow:
+
+1. User clicks Google, Microsoft, or GitHub on the registration page.
+2. Provider authenticates user.
+3. Backend receives provider profile and verified email.
+4. Backend asks for missing required fields if needed, such as phone or account type.
+5. Backend creates local LoopCart user.
+6. Backend links provider id to local user.
+7. Customer continues to customer home.
+8. Seller continues to seller onboarding.
+
+Registration page UI requirements:
+
+- Glass registration card.
+- Full name, phone number, email, password, and confirm password fields.
+- Customer/seller segmented role selector.
+- OAuth sign-up buttons.
+- Terms and privacy checkbox.
+- Password strength feedback.
+- Duplicate email inline error state.
+- Dark trust preview panel explaining secure identity, wallet, and seller verification.
 
 ## 3. Seller Working Flow
 

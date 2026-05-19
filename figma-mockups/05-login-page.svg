@@ -59,7 +59,17 @@
   <text x="182" y="600" class="small muted">Password</text>
   <text x="182" y="622" class="body slate">************</text>
 
-  <g transform="translate(158 656)">
+  <text x="158" y="660" class="small muted">Continue with OAuth</text>
+  <g transform="translate(158 678)">
+    <rect width="150" height="42" rx="8" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="48" y="27" class="small ink">Google</text>
+    <rect x="169" width="150" height="42" rx="8" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="206" y="27" class="small ink">Microsoft</text>
+    <rect x="338" width="150" height="42" rx="8" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="384" y="27" class="small ink">GitHub</text>
+  </g>
+
+  <g transform="translate(158 742)">
     <rect width="138" height="38" rx="19" fill="#101522"/>
     <text x="34" y="25" class="btn">Customer</text>
     <rect x="150" width="102" height="38" rx="19" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
@@ -68,10 +78,10 @@
     <text x="296" y="25" class="small slate">Admin</text>
   </g>
 
-  <rect x="158" y="724" width="488" height="54" rx="8" fill="url(#cta)"/>
-  <text x="360" y="758" class="btn">Login</text>
-  <text x="158" y="816" class="small teal">Forgot password?</text>
-  <text x="458" y="816" class="small slate">New to LoopCart? Create account</text>
+  <rect x="158" y="804" width="488" height="54" rx="8" fill="url(#cta)"/>
+  <text x="360" y="838" class="btn">Login</text>
+  <text x="158" y="876" class="small teal">Forgot password?</text>
+  <text x="458" y="876" class="small slate">New to LoopCart? Create account</text>
 
   <g filter="url(#shadow)">
     <rect x="748" y="280" width="580" height="610" rx="8" fill="#172033"/>
@@ -90,7 +100,7 @@
 
   <rect x="798" y="672" width="478" height="96" rx="8" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
   <text x="824" y="710" class="h3" fill="#fff">Security states</text>
-  <text x="824" y="742" class="body" fill="#d7deea">Email validation, password visibility toggle, remember me, forgot password, and role-based redirect.</text>
+  <text x="824" y="742" class="body" fill="#d7deea">Email/password login, OAuth login, remember me, forgot password, and role-based redirect.</text>
   <rect x="798" y="806" width="312" height="8" rx="4" fill="#fff" fill-opacity=".16"/>
   <rect x="798" y="806" width="216" height="8" rx="4" fill="url(#warm)"/>
 </svg>

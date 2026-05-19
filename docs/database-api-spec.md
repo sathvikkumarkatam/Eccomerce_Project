@@ -39,6 +39,9 @@ erDiagram
 | email | varchar | Unique |
 | phone | varchar | Optional |
 | password_hash | text | Required |
+| auth_provider | enum | local, google, microsoft, github |
+| provider_user_id | varchar | OAuth provider subject id, nullable for local users |
+| email_verified | boolean | True when email/OAuth email is verified |
 | role | enum | customer, seller, admin, delivery, support |
 | status | enum | active, blocked, pending |
 | created_at | timestamp | Default now |
@@ -163,10 +166,35 @@ Base URL:
 | --- | --- | --- |
 | POST | `/auth/register` | Create new user |
 | POST | `/auth/login` | Login user |
+| GET | `/oauth2/authorization/google` | Start Google OAuth login |
+| GET | `/oauth2/authorization/microsoft` | Start Microsoft OAuth login |
+| GET | `/oauth2/authorization/github` | Start GitHub OAuth login |
+| GET | `/login/oauth2/code/{provider}` | OAuth provider callback |
+| POST | `/auth/oauth/complete-profile` | Complete missing local profile details after OAuth |
 | POST | `/auth/logout` | Logout user |
 | POST | `/auth/refresh` | Refresh access token |
 | POST | `/auth/forgot-password` | Send reset OTP |
 | POST | `/auth/reset-password` | Reset password |
+
+Example registration request:
+
+```json
+{
+  "fullName": "Nandi User",
+  "email": "nandi@example.com",
+  "phone": "+15550100",
+  "password": "StrongPass@123",
+  "role": "customer"
+}
+```
+
+OAuth behavior:
+
+- OAuth providers return an external identity.
+- Backend stores provider name and provider user id.
+- If provider email already exists, backend links the OAuth identity after verification.
+- Public OAuth sign-up can create customer or seller accounts, but not admin accounts.
+- Seller OAuth registration still requires seller onboarding and admin approval.
 
 ### 4.2 Products
 
@@ -264,6 +292,9 @@ Example response:
 - Protect seller and admin APIs using role checks.
 - Validate request body using schemas.
 - Rate-limit login and OTP requests.
+- Rate-limit registration and OAuth callback abuse patterns.
+- Never allow public self-registration as admin.
+- Store OAuth provider id, not provider access tokens, unless a specific integration requires token storage.
 - Store payment tokens with payment provider, not in the local database.
 - Use signed URLs for private product documents.
 - Log admin actions for audit.
@@ -300,4 +331,3 @@ Trade-in statuses:
 ```text
 eligible -> requested -> picked_up -> inspected -> approved -> credited
 ```
-

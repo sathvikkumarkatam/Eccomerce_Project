@@ -105,14 +105,21 @@ These can be added in later phases.
 
 - Sign up using name, email, phone, and password.
 - Login using email and password.
+- Register as customer or seller.
+- Login using OAuth providers such as Google, Microsoft, or GitHub.
+- Sign up using OAuth providers and link provider identity to LoopCart user profile.
 - Role-based dashboard routing.
 - Password reset using email OTP.
 - JWT-based session management.
 - Login page includes a role selector for customer, seller, and admin.
+- Registration page includes customer/seller account type selection.
 - Customer login opens the customer home shopping dashboard.
 - Seller login opens Growth Studio.
 - Admin login opens the moderation and platform dashboard.
 - The UI should show inline validation, forgot password, create account, and optional remember-me controls.
+- OAuth users should still receive a local role and account status.
+- Seller OAuth sign-up should continue into seller onboarding and admin approval.
+- Admin accounts should not be self-created through public registration.
 
 ### 9.2 Product Catalog Module
 
@@ -226,6 +233,7 @@ flowchart TD
 ### Phase 2: Backend
 
 - Authentication
+- Registration and OAuth login
 - Product CRUD
 - Order APIs
 - Cart persistence

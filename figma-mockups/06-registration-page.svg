@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-label="LoopCart advanced registration page mockup">
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset=".48" stop-color="#eef6f7"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="inkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101522"/>
+      <stop offset="1" stop-color="#263654"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0fa6a6"/>
+      <stop offset="1" stop-color="#436fe8"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff6b5f"/>
+      <stop offset="1" stop-color="#f4b83f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#101522" flood-opacity=".16"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#101522" flood-opacity=".08"/>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#101522" stroke-opacity=".035" stroke-width="1"/>
+    </pattern>
+    <style>
+      .surface{fill:#fff;stroke:#e4e9f2;stroke-width:2}.glass{fill:#fff;fill-opacity:.86;stroke:#e4e9f2;stroke-width:2}.ink{fill:#101522}.slate{fill:#4a5568}.muted{fill:#7a8495}.teal{fill:#0fa6a6}.coral{fill:#ff6b5f}.amber{fill:#f4b83f}.blue{fill:#436fe8}.mint{fill:#dff8ee}.rose{fill:#fff0ee}.title{font:900 44px Inter,Arial,sans-serif}.h2{font:900 25px Inter,Arial,sans-serif}.h3{font:850 18px Inter,Arial,sans-serif}.body{font:500 15px Inter,Arial,sans-serif}.small{font:800 12px Inter,Arial,sans-serif}.micro{font:900 10px Inter,Arial,sans-serif;text-transform:uppercase}.btn{fill:#fff;font:850 13px Inter,Arial,sans-serif}.chipText{font:850 12px Inter,Arial,sans-serif}
+    </style>
+  </defs>
+  <rect width="1440" height="1080" fill="url(#page)"/>
+  <rect width="1440" height="1080" fill="url(#grid)"/>
+  <text x="72" y="52" class="micro teal">Advanced Figma screen 06</text>
+  <text x="72" y="88" class="title ink">LoopCart Registration Page</text>
+  <text x="72" y="118" class="body slate">Account creation screen with customer/seller role selection, OAuth sign-up, validation, and trust preview.</text>
+
+  <rect x="72" y="150" width="1296" height="72" rx="14" class="glass" filter="url(#soft)"/>
+  <rect x="100" y="166" width="42" height="42" rx="8" fill="url(#inkGrad)"/>
+  <text x="111" y="193" fill="#fff" class="small">LC</text>
+  <text x="154" y="193" class="h3 ink">LoopCart</text>
+  <text x="1010" y="193" class="small ink">Already have an account?</text>
+  <rect x="1224" y="164" width="98" height="44" rx="8" fill="url(#inkGrad)"/>
+  <text x="1252" y="191" class="btn">Login</text>
+
+  <g filter="url(#shadow)">
+    <rect x="112" y="270" width="650" height="660" rx="8" class="glass"/>
+  </g>
+  <text x="158" y="336" class="micro teal">Create account</text>
+  <text x="158" y="386" class="title ink">Start shopping smarter.</text>
+  <text x="158" y="426" class="body slate">Create a customer account, seller account, or continue with OAuth.</text>
+
+  <g transform="translate(158 466)">
+    <rect width="266" height="54" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="22" y="22" class="small muted">Full name</text>
+    <text x="22" y="44" class="body slate">Nandi User</text>
+    <rect x="288" width="266" height="54" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="310" y="22" class="small muted">Phone number</text>
+    <text x="310" y="44" class="body slate">+1 555 0100</text>
+    <rect y="78" width="554" height="54" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="22" y="100" class="small muted">Email address</text>
+    <text x="22" y="122" class="body slate">nandi@example.com</text>
+    <rect y="156" width="266" height="54" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="22" y="178" class="small muted">Password</text>
+    <text x="22" y="200" class="body slate">************</text>
+    <rect x="288" y="156" width="266" height="54" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="310" y="178" class="small muted">Confirm password</text>
+    <text x="310" y="200" class="body slate">************</text>
+  </g>
+
+  <text x="158" y="706" class="small muted">Register as</text>
+  <g transform="translate(158 724)">
+    <rect width="138" height="38" rx="19" fill="#101522"/>
+    <text x="34" y="25" class="btn">Customer</text>
+    <rect x="150" width="102" height="38" rx="19" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="180" y="25" class="small slate">Seller</text>
+  </g>
+
+  <text x="158" y="796" class="small muted">Or sign up with OAuth</text>
+  <g transform="translate(158 814)">
+    <rect width="170" height="42" rx="8" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="58" y="27" class="small ink">Google</text>
+    <rect x="192" width="170" height="42" rx="8" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="236" y="27" class="small ink">Microsoft</text>
+    <rect x="384" width="170" height="42" rx="8" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="438" y="27" class="small ink">GitHub</text>
+  </g>
+
+  <rect x="158" y="878" width="554" height="54" rx="8" fill="url(#cta)"/>
+  <text x="380" y="912" class="btn">Create account</text>
+
+  <g filter="url(#shadow)">
+    <rect x="820" y="270" width="508" height="660" rx="8" fill="#172033"/>
+  </g>
+  <path d="M820 270h508v660H820z" fill="url(#grid)" opacity=".24"/>
+  <text x="868" y="340" class="micro teal">Trust by design</text>
+  <text x="868" y="392" class="title" fill="#fff">Every new account starts with safer commerce.</text>
+  <text x="868" y="438" class="body" fill="#d7deea">Registration sets up secure identity, role-based access, trade-in wallet eligibility, and seller verification when needed.</text>
+
+  <rect x="868" y="502" width="176" height="122" rx="8" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+  <text x="894" y="540" class="small" fill="#d7deea">Email verify</text>
+  <text x="894" y="588" class="h2" fill="#fff">OTP</text>
+  <rect x="1072" y="502" width="176" height="122" rx="8" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+  <text x="1098" y="540" class="small" fill="#d7deea">OAuth ready</text>
+  <text x="1098" y="588" class="h2" fill="#fff">3</text>
+
+  <rect x="868" y="668" width="380" height="96" rx="8" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+  <text x="894" y="706" class="h3" fill="#fff">Seller verification path</text>
+  <text x="894" y="738" class="body" fill="#d7deea">Seller sign-up continues into store details, business documents, payout profile, and admin approval.</text>
+  <rect x="868" y="804" width="312" height="8" rx="4" fill="#fff" fill-opacity=".16"/>
+  <rect x="868" y="804" width="228" height="8" rx="4" fill="url(#warm)"/>
+</svg>

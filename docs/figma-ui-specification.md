@@ -24,6 +24,7 @@ The Figma-style frontend pictures are stored here:
 - `figma-mockups/03-cart-checkout.svg` - cart and checkout command rail with delivery, discount, wallet, and total.
 - `figma-mockups/04-seller-admin-dashboard.svg` - seller/admin Growth Studio dashboard with metrics and AI insights.
 - `figma-mockups/05-login-page.svg` - login page concept with role selector for customer, seller, and admin.
+- `figma-mockups/06-registration-page.svg` - registration page concept with customer/seller sign-up and OAuth sign-up.
 
 These are SVG picture files, so they can be opened in a browser, imported into Figma, or used as a visual reference while building the frontend.
 
@@ -189,13 +190,16 @@ Provide a polished, trustworthy entry point for all roles.
 Sections:
 
 - Sticky header with LoopCart brand.
-- Left glass login card with email, password, role selector, login action, forgot password, and sign-up link.
+- Left glass login card with email, password, OAuth buttons, role selector, login action, forgot password, and sign-up link.
 - Right dark trust preview panel showing role-aware dashboard benefits.
-- Security state area for validation, password visibility, remember me, and role-based redirect.
+- Security state area for validation, password visibility, OAuth login, remember me, and role-based redirect.
 
 Primary actions:
 
 - Login
+- Continue with Google
+- Continue with Microsoft
+- Continue with GitHub
 - Create account
 - Forgot password
 - Select customer, seller, or admin role
@@ -207,8 +211,44 @@ Behavior:
 - Admin login redirects to admin moderation dashboard.
 - Invalid fields show inline error text below the input.
 - Password field should include a visibility toggle.
+- OAuth login opens the provider flow, then redirects by role after the backend validates or creates the user profile.
 
-### 7.2 Customer Home
+### 7.2 Registration Page
+
+Goal:
+
+Make account creation feel secure, fast, and role-aware.
+
+Sections:
+
+- Sticky header with brand and login action.
+- Left glass registration card.
+- Full name, phone number, email, password, and confirm password fields.
+- Customer/seller role selector.
+- OAuth sign-up buttons for Google, Microsoft, and GitHub.
+- Terms and privacy confirmation.
+- Right dark trust preview panel.
+- Seller verification preview for sellers.
+
+Primary actions:
+
+- Create account
+- Sign up with Google
+- Sign up with Microsoft
+- Sign up with GitHub
+- Switch to login
+- Select customer or seller account type
+
+Behavior:
+
+- Customer registration creates an active customer profile and redirects to customer home after email verification.
+- Seller registration creates a pending seller profile and routes to seller onboarding.
+- OAuth registration creates or links an account using provider subject id and verified email.
+- Password rules should validate length, uppercase/lowercase, number, and special character.
+- Duplicate email should show a clear inline error.
+- Seller sign-up should continue to business details, documents, and admin approval.
+
+### 7.3 Customer Home
 
 Goal:
 
@@ -234,7 +274,7 @@ Primary actions:
 - Join social cart
 - View product passport
 
-### 7.3 Product Detail With AI
+### 7.4 Product Detail With AI
 
 Goal:
 
@@ -259,7 +299,7 @@ Primary actions:
 - Compare alternatives
 - Start trade-in estimate
 
-### 7.4 Cart And Checkout
+### 7.5 Cart And Checkout
 
 Goal:
 
@@ -282,7 +322,7 @@ Primary actions:
 - Select delivery
 - Place order
 
-### 7.5 Seller And Admin Dashboard
+### 7.6 Seller And Admin Dashboard
 
 Goal:
 
