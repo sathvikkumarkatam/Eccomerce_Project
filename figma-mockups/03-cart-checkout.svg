@@ -1,83 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040" role="img" aria-label="LoopCart cart and checkout mockup">
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-label="LoopCart advanced cart checkout mockup">
   <defs>
-    <style>
-      .bg{fill:#f6f8fb}.surface{fill:#fff;stroke:#e5e9f0;stroke-width:2}.ink{fill:#121826}.slate{fill:#4b5565}.muted{fill:#6b7280}.teal{fill:#10a7a7}.coral{fill:#ff6b5f}.amber{fill:#f6b84b}.blue{fill:#4b7bec}.mint{fill:#dff7ef}.title{font:800 34px Inter,Arial,sans-serif}.h2{font:800 24px Inter,Arial,sans-serif}.h3{font:800 18px Inter,Arial,sans-serif}.body{font:500 15px Inter,Arial,sans-serif}.small{font:700 12px Inter,Arial,sans-serif}.micro{font:800 10px Inter,Arial,sans-serif}.buttonText{fill:#fff;font:800 13px Inter,Arial,sans-serif}.shadow{filter:url(#shadow)}
-    </style>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#121826" flood-opacity=".08"/>
-    </filter>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset=".48" stop-color="#eef6f7"/><stop offset="1" stop-color="#fff7ed"/></linearGradient>
+    <linearGradient id="inkGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101522"/><stop offset="1" stop-color="#263654"/></linearGradient>
+    <linearGradient id="cta" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0fa6a6"/><stop offset="1" stop-color="#436fe8"/></linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff6b5f"/><stop offset="1" stop-color="#f4b83f"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#101522" flood-opacity=".16"/></filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#101522" flood-opacity=".08"/></filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#101522" stroke-opacity=".035" stroke-width="1"/></pattern>
+    <style>.surface{fill:#fff;stroke:#e4e9f2;stroke-width:2}.glass{fill:#fff;fill-opacity:.86;stroke:#e4e9f2;stroke-width:2}.ink{fill:#101522}.slate{fill:#4a5568}.muted{fill:#7a8495}.teal{fill:#0fa6a6}.coral{fill:#ff6b5f}.amber{fill:#f4b83f}.blue{fill:#436fe8}.mint{fill:#dff8ee}.rose{fill:#fff0ee}.title{font:900 44px Inter,Arial,sans-serif}.h2{font:900 25px Inter,Arial,sans-serif}.h3{font:850 18px Inter,Arial,sans-serif}.body{font:500 15px Inter,Arial,sans-serif}.small{font:800 12px Inter,Arial,sans-serif}.micro{font:900 10px Inter,Arial,sans-serif;text-transform:uppercase}.btn{fill:#fff;font:850 13px Inter,Arial,sans-serif}.chipText{font:850 12px Inter,Arial,sans-serif}</style>
   </defs>
-  <rect class="bg" width="1440" height="1040"/>
-  <text x="64" y="54" class="micro teal">Figma screen 03</text>
-  <text x="64" y="90" class="title ink">Cart And Checkout</text>
-  <text x="64" y="118" class="body slate">Cart, delivery choice, wallet credit, group discount, and final checkout summary.</text>
+  <rect width="1440" height="1080" fill="url(#page)"/>
+  <rect width="1440" height="1080" fill="url(#grid)"/>
+  <text x="72" y="52" class="micro teal">Advanced Figma screen 03</text>
+  <text x="72" y="88" class="title ink">Cart + Checkout Command Rail</text>
+  <text x="72" y="118" class="body slate">Updated to match the new animated checkout panel, delivery cards, social cart progress, and trade-in wallet UI.</text>
 
-  <rect x="64" y="154" width="1312" height="806" rx="18" class="surface shadow"/>
-  <text x="104" y="216" class="title ink">Checkout</text>
-  <text x="104" y="250" class="body slate">Review items and use LoopCart savings before payment.</text>
+  <rect x="72" y="150" width="1296" height="72" rx="14" class="glass" filter="url(#soft)"/>
+  <rect x="100" y="166" width="42" height="42" rx="8" fill="url(#inkGrad)"/>
+  <text x="111" y="193" fill="#fff" class="small">LC</text>
+  <text x="154" y="193" class="h3 ink">LoopCart</text>
+  <rect x="430" y="164" width="472" height="44" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+  <text x="454" y="191" class="small teal">Search</text>
+  <text x="522" y="191" class="body muted">Cart, wallet, checkout</text>
+  <rect x="1204" y="164" width="118" height="44" rx="8" fill="url(#inkGrad)"/>
+  <text x="1230" y="191" class="btn">Cart 3</text>
 
-  <g transform="translate(104 300)">
-    <text x="0" y="0" class="h2 ink">Cart items</text>
-    <rect x="0" y="34" width="680" height="120" rx="12" class="surface"/>
-    <rect x="20" y="54" width="100" height="80" rx="10" fill="#e9f6f6"/>
-    <rect x="44" y="104" width="52" height="10" rx="4" class="ink"/>
-    <rect x="140" y="62" width="210" height="18" rx="8" class="ink"/>
-    <rect x="140" y="96" width="280" height="14" rx="7" fill="#e5e9f0"/>
-    <text x="140" y="132" class="small teal">Product Passport verified</text>
-    <text x="590" y="92" class="h3 ink">$129</text>
+  <g filter="url(#shadow)">
+    <rect x="72" y="256" width="800" height="700" rx="8" class="glass"/>
+  </g>
+  <text x="112" y="316" class="title ink">Checkout</text>
+  <text x="112" y="350" class="body slate">Review products, unlock group savings, choose delivery, and reserve future wallet credit.</text>
 
-    <rect x="0" y="172" width="680" height="120" rx="12" class="surface"/>
-    <rect x="20" y="192" width="100" height="80" rx="10" fill="#eef3ff"/>
-    <circle cx="58" cy="232" r="20" class="teal"/>
-    <circle cx="86" cy="232" r="20" class="blue"/>
-    <rect x="140" y="200" width="220" height="18" rx="8" class="ink"/>
-    <rect x="140" y="234" width="260" height="14" rx="7" fill="#e5e9f0"/>
-    <text x="140" y="270" class="small teal">Group-buy eligible</text>
-    <text x="596" y="230" class="h3 ink">$89</text>
+  <g transform="translate(112 396)">
+    <rect width="710" height="120" rx="8" class="surface"/>
+    <rect x="18" y="18" width="84" height="84" rx="8" fill="#e9f6f6"/>
+    <rect x="40" y="76" width="40" height="10" rx="4" class="ink"/>
+    <text x="126" y="42" class="h3 ink">FlexLift Desk Riser</text>
+    <text x="126" y="74" class="small muted">Product Passport verified - Trust 94</text>
+    <rect x="126" y="86" width="118" height="25" rx="12" class="mint"/>
+    <text x="144" y="103" class="chipText teal">Resale eligible</text>
+    <text x="632" y="68" class="h2 ink">$129</text>
 
-    <text x="0" y="346" class="h2 ink">Delivery options</text>
-    <rect x="0" y="380" width="208" height="104" rx="12" fill="#fff" stroke="#e5e9f0" stroke-width="2"/>
-    <text x="20" y="416" class="h3 ink">Fast</text>
-    <text x="20" y="450" class="body slate">Tomorrow - $8.99</text>
-    <rect x="236" y="380" width="208" height="104" rx="12" fill="#eefafa" stroke="#10a7a7" stroke-width="3"/>
-    <text x="256" y="416" class="h3 ink">Standard</text>
-    <text x="256" y="450" class="body slate">3 days - $4.99</text>
-    <rect x="472" y="380" width="208" height="104" rx="12" fill="#fff7e7" stroke="#f6b84b" stroke-width="2"/>
-    <text x="492" y="416" class="h3 ink">Delay-To-Save</text>
-    <text x="492" y="450" class="body slate">5 days - $1.99</text>
-
-    <text x="0" y="546" class="h2 ink">Payment method</text>
-    <rect x="0" y="580" width="680" height="78" rx="12" class="surface"/>
-    <circle cx="36" cy="619" r="12" fill="#10a7a7"/>
-    <text x="64" y="624" class="h3 ink">Card ending 4242</text>
-    <text x="470" y="624" class="small slate">Change</text>
+    <rect y="144" width="710" height="120" rx="8" class="surface"/>
+    <rect x="18" y="162" width="84" height="84" rx="8" fill="#eef3ff"/>
+    <circle cx="50" cy="204" r="18" class="teal"/><circle cx="72" cy="204" r="18" class="blue"/>
+    <text x="126" y="186" class="h3 ink">LoopSound ANC Pods</text>
+    <text x="126" y="218" class="small muted">Bundle pick - Trust 91 - Resale 46%</text>
+    <rect x="126" y="230" width="116" height="25" rx="12" class="rose"/>
+    <text x="144" y="247" class="chipText coral">Group eligible</text>
+    <text x="642" y="212" class="h2 ink">$89</text>
   </g>
 
-  <g transform="translate(840 300)">
-    <rect width="420" height="548" rx="14" fill="#fff" stroke="#e5e9f0" stroke-width="2"/>
-    <text x="28" y="52" class="h2 ink">Order summary</text>
-    <text x="28" y="100" class="body slate">Subtotal</text>
-    <text x="328" y="100" class="h3 ink">$218.00</text>
-    <text x="28" y="142" class="body slate">Group discount</text>
-    <text x="328" y="142" class="h3 teal">-$21.80</text>
-    <text x="28" y="184" class="body slate">Wallet credit</text>
-    <text x="328" y="184" class="h3 coral">-$12.00</text>
-    <text x="28" y="226" class="body slate">Delivery</text>
-    <text x="338" y="226" class="h3 ink">$4.99</text>
-    <line x1="28" y1="264" x2="392" y2="264" stroke="#e5e9f0" stroke-width="2"/>
-    <text x="28" y="314" class="h2 ink">Total</text>
-    <text x="286" y="314" class="title ink">$189.19</text>
-    <rect x="28" y="350" width="364" height="50" rx="8" fill="#121826"/>
-    <text x="160" y="381" class="buttonText">Place order</text>
-
-    <rect x="28" y="430" width="364" height="84" rx="12" fill="#eefafa"/>
-    <text x="48" y="462" class="h3 ink">Trade-In Wallet</text>
-    <text x="48" y="492" class="body slate">Estimated future credit: $82</text>
+  <g transform="translate(112 704)">
+    <text x="0" y="0" class="h2 ink">Delivery options</text>
+    <rect x="0" y="34" width="218" height="112" rx="8" class="surface"/>
+    <text x="20" y="72" class="h3 ink">Fast</text>
+    <text x="20" y="104" class="body muted">Tomorrow</text>
+    <text x="150" y="104" class="h3 ink">$8.99</text>
+    <rect x="246" y="34" width="218" height="112" rx="8" fill="#eefafa" stroke="#0fa6a6" stroke-width="3"/>
+    <text x="266" y="72" class="h3 ink">Standard</text>
+    <text x="266" y="104" class="body muted">3 days</text>
+    <text x="396" y="104" class="h3 ink">$4.99</text>
+    <rect x="492" y="34" width="218" height="112" rx="8" fill="#fff7ed" stroke="#f4b83f" stroke-width="2"/>
+    <text x="512" y="72" class="h3 ink">Slow save</text>
+    <text x="512" y="104" class="body muted">5 days</text>
+    <text x="642" y="104" class="h3 ink">$1.99</text>
   </g>
 
-  <rect x="840" y="204" width="420" height="74" rx="12" fill="#fff7e7" stroke="#f1dda9" stroke-width="2"/>
-  <text x="868" y="236" class="h3 ink">Social Cart active</text>
-  <rect x="868" y="250" width="248" height="10" rx="5" fill="#e5e9f0"/>
-  <rect x="868" y="250" width="124" height="10" rx="5" class="teal"/>
-  <text x="1134" y="258" class="small slate">10% off</text>
+  <g filter="url(#shadow)">
+    <rect x="904" y="256" width="464" height="700" rx="8" fill="#172033"/>
+  </g>
+  <path d="M904 256h464v700H904z" fill="url(#grid)" opacity=".24"/>
+  <text x="940" y="316" class="micro teal">Live checkout</text>
+  <text x="940" y="356" class="h2" fill="#fff">Order summary</text>
+  <rect x="940" y="392" width="392" height="270" rx="8" fill="#fff"/>
+  <text x="966" y="438" class="body slate">Subtotal</text><text x="1244" y="438" class="h3 ink">$266.00</text>
+  <text x="966" y="486" class="body slate">Group discount</text><text x="1248" y="486" class="h3 teal">-$26.60</text>
+  <text x="966" y="534" class="body slate">Wallet credit</text><text x="1254" y="534" class="h3 coral">-$12.00</text>
+  <text x="966" y="582" class="body slate">Delivery</text><text x="1262" y="582" class="h3 ink">$4.99</text>
+  <line x1="966" y1="610" x2="1306" y2="610" stroke="#e4e9f2" stroke-width="2"/>
+  <text x="966" y="646" class="h2 ink">Total</text><text x="1202" y="646" class="h2 ink">$232.39</text>
+  <rect x="940" y="690" width="392" height="54" rx="8" fill="url(#cta)"/>
+  <text x="1086" y="724" class="btn">Place demo order</text>
+
+  <rect x="940" y="778" width="392" height="96" rx="8" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".22" stroke-width="2"/>
+  <text x="966" y="814" class="h3" fill="#fff">Social cart active</text>
+  <rect x="966" y="838" width="292" height="12" rx="6" fill="#fff" fill-opacity=".16"/>
+  <rect x="966" y="838" width="146" height="12" rx="6" fill="url(#warm)"/>
+  <text x="1274" y="848" class="small" fill="#fff">10%</text>
+
+  <rect x="940" y="890" width="392" height="44" rx="8" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".22" stroke-width="2"/>
+  <text x="966" y="918" class="small" fill="#fff">Trade-In Wallet estimate: $82 future credit</text>
 </svg>

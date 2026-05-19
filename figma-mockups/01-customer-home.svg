@@ -1,119 +1,151 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040" role="img" aria-label="LoopCart customer home Figma style mockup">
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-label="LoopCart advanced customer home mockup">
   <defs>
-    <style>
-      .bg{fill:#f6f8fb}.surface{fill:#fff;stroke:#e5e9f0;stroke-width:2}.ink{fill:#121826}.slate{fill:#4b5565}.muted{fill:#6b7280}.teal{fill:#10a7a7}.coral{fill:#ff6b5f}.amber{fill:#f6b84b}.blue{fill:#4b7bec}.mint{fill:#dff7ef}.line{stroke:#e5e9f0;stroke-width:2}.title{font:800 34px Inter,Arial,sans-serif}.h2{font:800 24px Inter,Arial,sans-serif}.h3{font:800 18px Inter,Arial,sans-serif}.body{font:500 15px Inter,Arial,sans-serif}.small{font:700 12px Inter,Arial,sans-serif}.micro{font:800 10px Inter,Arial,sans-serif;text-transform:uppercase}.button{fill:#121826}.buttonText{fill:#fff;font:800 13px Inter,Arial,sans-serif}.chip{fill:#f6f8fb;stroke:#e5e9f0;stroke-width:2}.shadow{filter:url(#shadow)}
-    </style>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset=".48" stop-color="#eef6f7"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="inkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101522"/>
+      <stop offset="1" stop-color="#263654"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0fa6a6"/>
+      <stop offset="1" stop-color="#436fe8"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff6b5f"/>
+      <stop offset="1" stop-color="#f4b83f"/>
+    </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#121826" flood-opacity=".08"/>
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#101522" flood-opacity=".16"/>
     </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#101522" flood-opacity=".08"/>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#101522" stroke-opacity=".035" stroke-width="1"/>
+    </pattern>
+    <style>
+      .surface{fill:#fff;stroke:#e4e9f2;stroke-width:2}.glass{fill:#fff;fill-opacity:.84;stroke:#e4e9f2;stroke-width:2}.dark{fill:url(#inkGrad)}.ink{fill:#101522}.slate{fill:#4a5568}.muted{fill:#7a8495}.teal{fill:#0fa6a6}.coral{fill:#ff6b5f}.amber{fill:#f4b83f}.blue{fill:#436fe8}.mint{fill:#dff8ee}.rose{fill:#fff0ee}.title{font:900 44px Inter,Arial,sans-serif}.h2{font:900 25px Inter,Arial,sans-serif}.h3{font:850 18px Inter,Arial,sans-serif}.body{font:500 15px Inter,Arial,sans-serif}.small{font:800 12px Inter,Arial,sans-serif}.micro{font:900 10px Inter,Arial,sans-serif;text-transform:uppercase}.btn{fill:#fff;font:850 13px Inter,Arial,sans-serif}.chipText{font:850 12px Inter,Arial,sans-serif}
+    </style>
   </defs>
-  <rect class="bg" width="1440" height="1040"/>
-  <text x="64" y="54" class="micro teal">Figma screen 01</text>
-  <text x="64" y="90" class="title ink">LoopCart Customer Home</text>
-  <text x="64" y="118" class="body slate">AI discovery, product grid, social cart, and trade-in wallet entry.</text>
+  <rect width="1440" height="1080" fill="url(#page)"/>
+  <rect width="1440" height="1080" fill="url(#grid)"/>
+  <text x="72" y="52" class="micro teal">Advanced Figma screen 01</text>
+  <text x="72" y="88" class="title ink">LoopCart Customer Home</text>
+  <text x="72" y="118" class="body slate">Matches the upgraded frontend: glass header, hero command stage, smart picks, and sticky commerce rail.</text>
 
-  <rect x="64" y="154" width="980" height="806" rx="18" class="surface shadow"/>
-  <rect x="92" y="182" width="924" height="64" rx="12" fill="#ffffff" stroke="#e5e9f0" stroke-width="2"/>
-  <rect x="116" y="196" width="40" height="40" rx="8" class="ink"/>
-  <text x="126" y="221" fill="#fff" class="small">LC</text>
-  <text x="172" y="221" class="h3 ink">LoopCart</text>
-  <rect x="348" y="196" width="372" height="40" rx="8" fill="#f6f8fb" stroke="#e5e9f0" stroke-width="2"/>
-  <text x="370" y="221" class="body muted">Search products, bundles, sellers</text>
-  <rect x="742" y="196" width="118" height="40" rx="8" fill="#eefafa"/>
-  <text x="768" y="221" class="small teal">AI Concierge</text>
-  <rect x="882" y="196" width="110" height="40" rx="8" class="button"/>
-  <text x="910" y="221" class="buttonText">Cart 2</text>
+  <rect x="72" y="150" width="1296" height="72" rx="14" class="glass" filter="url(#soft)"/>
+  <rect x="100" y="166" width="42" height="42" rx="8" fill="url(#inkGrad)"/>
+  <text x="111" y="193" fill="#fff" class="small">LC</text>
+  <text x="154" y="193" class="h3 ink">LoopCart</text>
+  <rect x="430" y="164" width="472" height="44" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+  <text x="454" y="191" class="small teal">Search</text>
+  <text x="522" y="191" class="body muted">Desk setup, earbuds, coffee kit</text>
+  <text x="1070" y="191" class="small ink">Shop</text>
+  <text x="1130" y="191" class="small ink">Studio</text>
+  <rect x="1204" y="164" width="118" height="44" rx="8" fill="url(#inkGrad)"/>
+  <text x="1230" y="191" class="btn">Cart 2</text>
 
-  <rect x="92" y="278" width="576" height="210" rx="14" fill="#eefafa" stroke="#ccefed" stroke-width="2"/>
-  <text x="120" y="314" class="micro teal">AI circular marketplace</text>
-  <text x="120" y="358" class="title ink">Build a smarter cart</text>
-  <text x="120" y="388" class="body slate">Describe your goal and LoopCart creates a trusted bundle with savings and resale value.</text>
-  <rect x="120" y="420" width="176" height="44" rx="8" class="button"/>
-  <text x="156" y="448" class="buttonText">Ask AI</text>
-  <rect x="312" y="420" width="176" height="44" rx="8" fill="#fff" stroke="#121826" stroke-width="2"/>
-  <text x="344" y="448" class="small ink">View passports</text>
-  <circle cx="588" cy="360" r="54" class="coral"/>
-  <path d="M562 362l18 18 40-52" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <rect x="696" y="278" width="320" height="210" rx="14" class="surface"/>
-  <text x="724" y="314" class="micro teal">Social cart</text>
-  <text x="724" y="348" class="h2 ink">4 joined</text>
-  <rect x="724" y="374" width="244" height="12" rx="6" fill="#e5e9f0"/>
-  <rect x="724" y="374" width="122" height="12" rx="6" class="teal"/>
-  <text x="724" y="418" class="body slate">10 percent group discount active.</text>
-  <rect x="724" y="438" width="156" height="36" rx="8" fill="#fff" stroke="#121826" stroke-width="2"/>
-  <text x="748" y="461" class="small ink">Invite friends</text>
-
-  <g transform="translate(92 526)">
-    <text x="0" y="0" class="micro teal">Recommended products</text>
-    <text x="0" y="36" class="h2 ink">Shop smart picks</text>
-    <rect x="612" y="4" width="76" height="34" rx="17" class="chip"/>
-    <text x="632" y="26" class="small slate">All</text>
-    <rect x="696" y="4" width="118" height="34" rx="17" class="chip"/>
-    <text x="720" y="26" class="small slate">Workspace</text>
-    <rect x="822" y="4" width="78" height="34" rx="17" class="chip"/>
-    <text x="846" y="26" class="small slate">Tech</text>
+  <g filter="url(#shadow)">
+    <rect x="72" y="256" width="740" height="470" rx="8" class="glass"/>
+  </g>
+  <text x="112" y="324" class="micro teal">AI commerce dashboard</text>
+  <text x="112" y="382" class="title ink">Shop products with proof, savings, and resale value built in.</text>
+  <text x="112" y="426" class="body slate">LoopCart turns ecommerce into a live buying workspace with AI bundles, group discounts, passports, and trade-in credit.</text>
+  <rect x="112" y="470" width="178" height="48" rx="8" fill="url(#cta)"/>
+  <text x="146" y="499" class="btn">Explore marketplace</text>
+  <rect x="306" y="470" width="166" height="48" rx="8" fill="#fff" stroke="#101522" stroke-opacity=".16" stroke-width="2"/>
+  <text x="338" y="499" class="small ink">Build AI bundle</text>
+  <g>
+    <rect x="112" y="570" width="188" height="98" rx="8" class="surface"/>
+    <text x="136" y="608" class="small muted">Avg savings</text>
+    <text x="136" y="646" class="h2 ink">18%</text>
+    <rect x="316" y="570" width="188" height="98" rx="8" class="surface"/>
+    <text x="340" y="608" class="small muted">Seller trust</text>
+    <text x="340" y="646" class="h2 ink">91</text>
+    <rect x="520" y="570" width="188" height="98" rx="8" class="surface"/>
+    <text x="544" y="608" class="small muted">Wallet reuse</text>
+    <text x="544" y="646" class="h2 ink">$82</text>
   </g>
 
-  <g transform="translate(92 590)">
-    <rect width="284" height="306" rx="12" class="surface"/>
-    <rect x="16" y="16" width="252" height="132" rx="10" fill="#e9f6f6"/>
-    <rect x="66" y="106" width="152" height="16" rx="5" class="ink"/>
-    <rect x="102" y="62" width="80" height="48" rx="10" fill="#fff" stroke="#10a7a7" stroke-width="6"/>
-    <rect x="16" y="164" width="94" height="24" rx="12" class="mint"/>
-    <text x="28" y="181" class="small teal">Resale ready</text>
-    <text x="16" y="216" class="h3 ink">FlexLift Desk Riser</text>
-    <text x="16" y="244" class="body slate">Trust 94 - 24 mo warranty</text>
-    <text x="16" y="284" class="h2 ink">$129</text>
-    <rect x="164" y="258" width="104" height="36" rx="8" class="button"/>
-    <text x="196" y="281" class="buttonText">Add</text>
+  <g filter="url(#shadow)">
+    <rect x="842" y="256" width="526" height="470" rx="8" fill="#172033"/>
   </g>
-  <g transform="translate(396 590)">
-    <rect width="284" height="306" rx="12" class="surface"/>
-    <rect x="16" y="16" width="252" height="132" rx="10" fill="#eef3ff"/>
-    <circle cx="112" cy="78" r="34" class="teal"/>
-    <circle cx="172" cy="78" r="34" class="blue"/>
-    <rect x="98" y="88" width="28" height="62" rx="14" class="teal"/>
-    <rect x="158" y="88" width="28" height="62" rx="14" class="blue"/>
-    <rect x="16" y="164" width="100" height="24" rx="12" fill="#ffe7e4"/>
-    <text x="28" y="181" class="small coral">Verified seller</text>
-    <text x="16" y="216" class="h3 ink">LoopSound ANC Pods</text>
-    <text x="16" y="244" class="body slate">Trust 91 - resale 46%</text>
-    <text x="16" y="284" class="h2 ink">$89</text>
-    <rect x="164" y="258" width="104" height="36" rx="8" class="button"/>
-    <text x="196" y="281" class="buttonText">Add</text>
+  <path d="M842 256h526v470H842z" fill="url(#grid)" opacity=".26"/>
+  <g filter="url(#shadow)">
+    <rect x="902" y="304" width="406" height="338" rx="8" fill="#fff"/>
   </g>
-  <g transform="translate(700 590)">
-    <rect width="284" height="306" rx="12" class="surface"/>
-    <rect x="16" y="16" width="252" height="132" rx="10" fill="#fff7e7"/>
-    <rect x="78" y="58" width="70" height="92" rx="16" class="ink"/>
-    <rect x="166" y="74" width="62" height="72" rx="18" fill="#fff" stroke="#10a7a7" stroke-width="6"/>
-    <rect x="16" y="164" width="82" height="24" rx="12" class="mint"/>
-    <text x="28" y="181" class="small teal">Bundle pick</text>
-    <text x="16" y="216" class="h3 ink">ReLeaf Coffee Kit</text>
-    <text x="16" y="244" class="body slate">Trust 96 - carbon 88</text>
-    <text x="16" y="284" class="h2 ink">$48</text>
-    <rect x="164" y="258" width="104" height="36" rx="8" class="button"/>
-    <text x="196" y="281" class="buttonText">Add</text>
+  <circle cx="930" cy="330" r="5" class="teal"/>
+  <text x="944" y="334" class="small muted">Live smart cart</text>
+  <rect x="926" y="354" width="358" height="176" rx="8" fill="#e9f6f6"/>
+  <rect x="992" y="476" width="226" height="20" rx="6" fill="#101522"/>
+  <rect x="1038" y="404" width="136" height="74" rx="14" fill="#fff" stroke="#0fa6a6" stroke-width="8"/>
+  <rect x="1075" y="362" width="70" height="34" rx="10" fill="#101522"/>
+  <text x="926" y="568" class="h2 ink">FlexLift Desk Riser</text>
+  <text x="926" y="596" class="body slate">Verified seller, 24 month warranty, resale eligible.</text>
+  <text x="926" y="628" class="h2 ink">$129</text>
+  <rect x="1206" y="602" width="78" height="28" rx="14" class="mint"/>
+  <text x="1220" y="621" class="chipText teal">Trust 94</text>
+
+  <rect x="866" y="590" width="214" height="92" rx="8" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+  <rect x="886" y="610" width="54" height="24" rx="12" fill="#0fa6a6" fill-opacity=".75"/>
+  <text x="898" y="627" class="micro" fill="#fff">AI pick</text>
+  <text x="886" y="654" class="small" fill="#fff">Desk + Pods + Coffee</text>
+  <text x="886" y="674" class="small" fill="#d8dee9">Bundle total: $266</text>
+
+  <rect x="1162" y="548" width="178" height="92" rx="8" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+  <rect x="1182" y="568" width="74" height="24" rx="12" fill="#0fa6a6" fill-opacity=".75"/>
+  <text x="1194" y="585" class="micro" fill="#fff">Passport</text>
+  <text x="1182" y="612" class="small" fill="#fff">Resale 52%</text>
+  <text x="1182" y="632" class="small" fill="#d8dee9">Carbon score 81</text>
+  <rect x="890" y="684" width="430" height="4" rx="2" fill="#fff" fill-opacity=".15"/>
+  <rect x="890" y="684" width="160" height="4" rx="2" fill="url(#warm)"/>
+
+  <g transform="translate(72 760)">
+    <rect width="820" height="230" rx="8" class="glass" filter="url(#soft)"/>
+    <text x="28" y="42" class="micro teal">Marketplace</text>
+    <text x="28" y="78" class="h2 ink">Smart picks</text>
+    <rect x="532" y="30" width="58" height="34" rx="17" fill="url(#inkGrad)"/>
+    <text x="552" y="52" class="small" fill="#fff">All</text>
+    <rect x="600" y="30" width="104" height="34" rx="17" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="622" y="52" class="small slate">Workspace</text>
+    <rect x="714" y="30" width="76" height="34" rx="17" fill="#fff" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="738" y="52" class="small slate">Tech</text>
+
+    <g transform="translate(28 104)">
+      <rect width="240" height="96" rx="8" class="surface"/>
+      <rect x="14" y="14" width="72" height="68" rx="8" fill="#e9f6f6"/>
+      <rect x="102" y="18" width="116" height="14" rx="7" class="ink"/>
+      <text x="102" y="56" class="small muted">Trust 94 - resale 52%</text>
+      <text x="102" y="80" class="small teal">$129</text>
+    </g>
+    <g transform="translate(292 104)">
+      <rect width="240" height="96" rx="8" class="surface"/>
+      <rect x="14" y="14" width="72" height="68" rx="8" fill="#eef3ff"/>
+      <rect x="102" y="18" width="126" height="14" rx="7" class="ink"/>
+      <text x="102" y="56" class="small muted">Trust 91 - bundle pick</text>
+      <text x="102" y="80" class="small teal">$89</text>
+    </g>
+    <g transform="translate(556 104)">
+      <rect width="236" height="96" rx="8" class="surface"/>
+      <rect x="14" y="14" width="72" height="68" rx="8" fill="#fff7e7"/>
+      <rect x="102" y="18" width="112" height="14" rx="7" class="ink"/>
+      <text x="102" y="56" class="small muted">Trust 96 - gift ready</text>
+      <text x="102" y="80" class="small teal">$48</text>
+    </g>
   </g>
 
-  <rect x="1090" y="154" width="286" height="806" rx="30" class="surface shadow"/>
-  <rect x="1112" y="188" width="242" height="52" rx="12" class="ink"/>
-  <text x="1140" y="221" fill="#fff" class="h3">LoopCart</text>
-  <rect x="1112" y="266" width="242" height="154" rx="14" fill="#eefafa"/>
-  <text x="1132" y="296" class="micro teal">AI concierge</text>
-  <text x="1132" y="328" class="h3 ink">Compact setup</text>
-  <text x="1132" y="358" class="body slate">3 item bundle under $350.</text>
-  <rect x="1132" y="376" width="112" height="32" rx="8" class="button"/>
-  <text x="1156" y="397" class="buttonText">Apply</text>
-  <rect x="1112" y="442" width="242" height="150" rx="14" class="surface"/>
-  <text x="1132" y="476" class="h3 ink">Cart total</text>
-  <text x="1132" y="524" class="title ink">$246.59</text>
-  <text x="1132" y="558" class="body slate">Includes group discount.</text>
-  <rect x="1112" y="614" width="242" height="132" rx="14" fill="#fff7e7"/>
-  <text x="1132" y="648" class="h3 ink">Trade-In Wallet</text>
-  <text x="1132" y="682" class="body slate">$82 estimated future credit.</text>
-  <rect x="1112" y="768" width="242" height="126" rx="14" class="surface"/>
-  <text x="1132" y="802" class="h3 ink">Product Passport</text>
-  <text x="1132" y="836" class="body slate">Trust, warranty, resale, carbon.</text>
+  <g transform="translate(920 760)">
+    <rect width="448" height="230" rx="8" class="glass" filter="url(#soft)"/>
+    <text x="26" y="42" class="micro teal">Command rail</text>
+    <text x="26" y="78" class="h2 ink">Checkout + Passport</text>
+    <rect x="26" y="104" width="184" height="92" rx="8" fill="#f5f7fb" stroke="#e4e9f2" stroke-width="2"/>
+    <text x="46" y="136" class="small muted">Cart total</text>
+    <text x="46" y="174" class="h2 ink">$246.59</text>
+    <rect x="232" y="104" width="184" height="92" rx="8" fill="#eefafa" stroke="#cfeeed" stroke-width="2"/>
+    <text x="252" y="136" class="small muted">Group discount</text>
+    <text x="252" y="174" class="h2 teal">10%</text>
+  </g>
 </svg>
