@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-label="TerraPack day bag product illustration">
+  <rect width="640" height="420" rx="24" fill="#F2F8ED"/>
+  <path d="M222 156c0-58 42-98 98-98s98 40 98 98" fill="none" stroke="#121826" stroke-width="22" stroke-linecap="round"/>
+  <rect x="190" y="130" width="260" height="230" rx="38" fill="#10A7A7"/>
+  <rect x="228" y="174" width="184" height="84" rx="24" fill="#FFFFFF" opacity=".96"/>
+  <rect x="242" y="190" width="156" height="14" rx="7" fill="#4B5565"/>
+  <rect x="242" y="220" width="112" height="14" rx="7" fill="#4B5565" opacity=".75"/>
+  <rect x="198" y="276" width="244" height="34" rx="17" fill="#121826"/>
+  <circle cx="454" cy="118" r="38" fill="#F6B84B"/>
+  <path d="M442 118l10 10 22-28" fill="none" stroke="#121826" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

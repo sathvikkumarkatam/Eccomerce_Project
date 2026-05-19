@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-label="MotionFit smart band product illustration">
+  <rect width="640" height="420" rx="24" fill="#FFF3F1"/>
+  <rect x="282" y="54" width="76" height="118" rx="28" fill="#121826"/>
+  <rect x="282" y="248" width="76" height="118" rx="28" fill="#121826"/>
+  <rect x="238" y="130" width="164" height="158" rx="44" fill="#FF6B5F"/>
+  <rect x="264" y="156" width="112" height="106" rx="28" fill="#FFFFFF"/>
+  <path d="M286 214c18-40 38-12 48-30 10-18 28-4 32 18" fill="none" stroke="#10A7A7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="450" cy="112" r="38" fill="#F6B84B"/>
+  <path d="M438 112l10 10 22-28" fill="none" stroke="#121826" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

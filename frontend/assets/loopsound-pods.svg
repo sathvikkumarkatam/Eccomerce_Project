@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-label="LoopSound earbuds product illustration">
+  <rect width="640" height="420" rx="24" fill="#F6F8FB"/>
+  <rect x="208" y="222" width="224" height="112" rx="44" fill="#121826"/>
+  <rect x="238" y="246" width="164" height="38" rx="19" fill="#FFFFFF" opacity=".92"/>
+  <circle cx="274" cy="170" r="52" fill="#10A7A7"/>
+  <circle cx="366" cy="170" r="52" fill="#4B7BEC"/>
+  <rect x="252" y="164" width="44" height="118" rx="22" fill="#10A7A7"/>
+  <rect x="344" y="164" width="44" height="118" rx="22" fill="#4B7BEC"/>
+  <circle cx="274" cy="170" r="18" fill="#FFFFFF"/>
+  <circle cx="366" cy="170" r="18" fill="#FFFFFF"/>
+  <path d="M132 96c64-42 116-42 156 0" fill="none" stroke="#FF6B5F" stroke-width="14" stroke-linecap="round"/>
+  <path d="M352 96c64-42 116-42 156 0" fill="none" stroke="#F6B84B" stroke-width="14" stroke-linecap="round"/>
+</svg>

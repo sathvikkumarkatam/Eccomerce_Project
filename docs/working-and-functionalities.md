@@ -1,0 +1,192 @@
+# Working And Functionalities
+
+## 1. How LoopCart Works
+
+LoopCart works as a multi-role ecommerce platform. The customer side focuses on product discovery, smart recommendations, trust, cart, checkout, and post-purchase trade-in. The seller side focuses on product management, inventory, orders, returns, and sales improvement. The admin side controls users, sellers, products, categories, disputes, and platform analytics.
+
+## 2. Customer Working Flow
+
+1. Customer signs up or logs in.
+2. Customer lands on the personalized home page.
+3. Customer can search manually or use AI Cart Concierge.
+4. Product cards show price, rating, seller, delivery estimate, sustainability score, and resale eligibility.
+5. Customer opens a product detail page.
+6. Customer checks Product Passport before buying.
+7. Customer adds product to cart or wishlist.
+8. Customer can create or join a Social Cart for group discount.
+9. Customer selects delivery option:
+   - Fast delivery
+   - Standard delivery
+   - Delay-To-Save delivery
+10. Customer applies coupon or wallet credit.
+11. Customer places order.
+12. Customer tracks order status.
+13. Customer reviews the product.
+14. Product becomes available in Trade-In Wallet after return window closes.
+15. Customer can resell, trade in, repair, or donate the product.
+
+## 3. Seller Working Flow
+
+1. Seller registers and submits verification documents.
+2. Admin approves seller account.
+3. Seller adds products with images, price, stock, category, warranty, return policy, and product passport details.
+4. Seller views active orders.
+5. Seller accepts, packs, and ships orders.
+6. Seller manages returns and refunds.
+7. Seller checks Growth Studio insights:
+   - Products with low conversion
+   - High-return products
+   - Suggested price changes
+   - Inventory restock alerts
+   - Image quality recommendations
+8. Seller improves listing quality and offers.
+
+## 4. Admin Working Flow
+
+1. Admin logs into admin dashboard.
+2. Admin manages users and sellers.
+3. Admin approves seller documents.
+4. Admin approves or rejects products.
+5. Admin monitors orders, returns, refunds, and disputes.
+6. Admin reviews platform revenue, conversion, and category growth.
+7. Admin flags suspicious sellers or fake reviews.
+8. Admin manages banners, categories, coupons, and commissions.
+
+## 5. Customer Functionalities
+
+| Functionality | Description | Priority |
+| --- | --- | --- |
+| Register/Login | Customer can create account and log in securely. | MVP |
+| Profile Management | Customer can update name, email, phone, addresses, and preferences. | MVP |
+| Product Search | Search by product name, brand, category, and keyword. | MVP |
+| Filters And Sorting | Filter by price, rating, seller trust, delivery, sustainability, and resale eligibility. | MVP |
+| Product Detail | View images, price, description, reviews, variants, delivery, warranty, and seller info. | MVP |
+| Product Passport | View authenticity, warranty, seller trust, carbon score, repairability, and resale estimate. | Unique |
+| Wishlist | Save products for later. | MVP |
+| Cart | Add, remove, and update product quantities. | MVP |
+| AI Cart Concierge | Get cart suggestions based on goal, budget, and preferences. | Unique |
+| Social Cart | Invite others to unlock group-buy discounts. | Unique |
+| Checkout | Address, delivery, payment, coupon, wallet credit, and order confirmation. | MVP |
+| Order Tracking | Track pending, packed, shipped, out for delivery, delivered, return requested. | MVP |
+| Reviews | Rate products and sellers with text and photos. | MVP |
+| Trade-In Wallet | View resale value and request trade-in. | Unique |
+
+## 6. Seller Functionalities
+
+| Functionality | Description | Priority |
+| --- | --- | --- |
+| Seller Registration | Seller submits business details and documents. | MVP |
+| Product Management | Add, edit, delete, and pause products. | MVP |
+| Inventory Management | Update stock, low-stock alerts, SKU management. | MVP |
+| Order Management | View and update order status. | MVP |
+| Return Management | Approve or reject return requests. | MVP |
+| Sales Analytics | Revenue, conversion, order count, returns, and average rating. | MVP |
+| Growth Studio | AI suggestions for pricing, images, stock, and offers. | Unique |
+| TrustScore Panel | Shows seller performance based on delivery, reviews, returns, and authenticity. | Unique |
+
+## 7. Admin Functionalities
+
+| Functionality | Description | Priority |
+| --- | --- | --- |
+| Dashboard | View platform revenue, orders, users, sellers, and disputes. | MVP |
+| User Management | View, block, unblock, and update user status. | MVP |
+| Seller Approval | Verify seller KYC and business documents. | MVP |
+| Product Approval | Approve, reject, or remove product listings. | MVP |
+| Category Management | Add, edit, and delete categories. | MVP |
+| Coupon Management | Create platform coupons and discount rules. | MVP |
+| Review Moderation | Detect fake, abusive, or duplicate reviews. | Phase 2 |
+| Dispute Management | Resolve refund, return, seller, and delivery issues. | MVP |
+| Analytics | Sales, traffic, conversion, top categories, and retention. | MVP |
+
+## 8. Unique Feature Details
+
+### 8.1 AI Cart Concierge
+
+Input examples:
+
+- "I need a study desk setup under $300."
+- "Suggest skincare products for oily skin under $80."
+- "Build a gift basket for a coffee lover."
+
+Output:
+
+- Recommended product bundle
+- Total price
+- Savings
+- Delivery estimate
+- Compatibility notes
+- Cheaper alternative
+- Premium alternative
+
+### 8.2 Product Passport
+
+Each product has a passport card with:
+
+- Authenticity status
+- Warranty months
+- Seller TrustScore
+- Repairability score
+- Carbon score
+- Return risk
+- Resale eligibility
+- Estimated trade-in value after 6 months
+
+### 8.3 Social Cart
+
+Discount tiers:
+
+| Participants | Discount |
+| --- | --- |
+| 1 buyer | 0 percent |
+| 2 buyers | 5 percent |
+| 4 buyers | 10 percent |
+| 8 buyers | 15 percent |
+
+The cart has an expiry time. If the group target is reached before expiry, all members receive the discount.
+
+### 8.4 Delay-To-Save Delivery
+
+Customers can choose a slower delivery option to reduce shipping cost. The system combines orders by area and route to reduce cost and carbon impact.
+
+Example:
+
+- Fast delivery: $8.99, arrives tomorrow
+- Standard delivery: $4.99, arrives in 3 days
+- Delay-To-Save: $1.99, arrives in 5 days, 22 percent lower carbon impact
+
+### 8.5 Trade-In Wallet
+
+After purchase, eligible products are added to the customer's Trade-In Wallet.
+
+Example:
+
+- Original product price: $120
+- Estimated trade-in value after 6 months: $42
+- Customer can request pickup
+- Admin/seller verifies condition
+- Wallet credit is added after approval
+
+## 9. Non-Functional Requirements
+
+| Requirement | Target |
+| --- | --- |
+| Performance | Product listing should load within 2 seconds for common searches. |
+| Security | Passwords hashed, JWT sessions, role-based access, HTTPS in production. |
+| Scalability | Product search and images should scale independently. |
+| Availability | Core browsing and checkout should have high uptime. |
+| Usability | Customer should reach checkout in 3 to 5 clicks from product page. |
+| Accessibility | Color contrast, keyboard navigation, semantic HTML, readable labels. |
+| Maintainability | Separate frontend, backend, services, and database layers. |
+
+## 10. Success Metrics
+
+- Search-to-product-click rate
+- Add-to-cart rate
+- Checkout conversion rate
+- Group-buy participation rate
+- Repeat purchase rate
+- Trade-in wallet activation rate
+- Seller TrustScore improvement
+- Return rate reduction
+- Average order value
+

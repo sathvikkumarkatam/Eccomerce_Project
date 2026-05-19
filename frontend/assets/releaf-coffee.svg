@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-label="ReLeaf coffee kit product illustration">
+  <rect width="640" height="420" rx="24" fill="#FFF7E7"/>
+  <rect x="176" y="150" width="154" height="190" rx="26" fill="#121826"/>
+  <rect x="204" y="184" width="98" height="42" rx="12" fill="#F6B84B"/>
+  <path d="M214 266c38-28 64 28 98 0" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+  <rect x="356" y="184" width="112" height="142" rx="28" fill="#FFFFFF" stroke="#10A7A7" stroke-width="10"/>
+  <path d="M468 218h36c22 0 22 62 0 62h-36" fill="none" stroke="#10A7A7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M382 142c-22-26 8-34 0-62M418 142c-22-26 8-34 0-62" fill="none" stroke="#FF6B5F" stroke-width="10" stroke-linecap="round"/>
+</svg>

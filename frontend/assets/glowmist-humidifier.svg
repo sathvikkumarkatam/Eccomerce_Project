@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-label="GlowMist humidifier product illustration">
+  <rect width="640" height="420" rx="24" fill="#EEF3FF"/>
+  <rect x="230" y="150" width="180" height="204" rx="42" fill="#FFFFFF" stroke="#4B7BEC" stroke-width="10"/>
+  <rect x="256" y="116" width="128" height="54" rx="26" fill="#121826"/>
+  <circle cx="320" cy="258" r="48" fill="#DFF7EF"/>
+  <circle cx="320" cy="258" r="18" fill="#10A7A7"/>
+  <path d="M286 90c-28-34 10-42 0-76M330 90c-28-34 10-42 0-76M374 90c-28-34 10-42 0-76" fill="none" stroke="#10A7A7" stroke-width="12" stroke-linecap="round"/>
+  <rect x="246" y="326" width="148" height="14" rx="7" fill="#4B5565"/>
+</svg>

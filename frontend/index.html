@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoopCart Ecommerce Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="LoopCart home">
+      <span class="brand-mark">LC</span>
+      <span>LoopCart</span>
+    </a>
+    <label class="search">
+      <span class="search-icon" aria-hidden="true">S</span>
+      <input id="searchInput" type="search" placeholder="Search products, bundles, sellers">
+    </label>
+    <nav class="nav-actions" aria-label="Primary actions">
+      <a href="#aiPanel">AI Concierge</a>
+      <a href="#sellerPanel">Seller Studio</a>
+      <button id="cartJump" type="button">Cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main id="top" class="page-shell">
+    <section class="workspace-grid" aria-label="LoopCart shopping workspace">
+      <div class="main-column">
+        <section id="aiPanel" class="ai-panel">
+          <div>
+            <p class="eyebrow">AI circular marketplace</p>
+            <h1>Build a smarter cart, verify trust, and trade products back later.</h1>
+            <p class="intro">LoopCart combines product discovery, social buying, seller trust, delivery savings, and resale value in one ecommerce journey.</p>
+          </div>
+          <form id="aiForm" class="ai-form">
+            <label>
+              Shopping goal
+              <input id="goalInput" value="Compact work-from-home setup" aria-label="Shopping goal">
+            </label>
+            <label>
+              Budget
+              <input id="budgetInput" type="number" min="50" max="1000" step="25" value="350" aria-label="Budget">
+            </label>
+            <button type="submit">Generate smart bundle</button>
+          </form>
+          <div id="aiResult" class="ai-result" aria-live="polite">
+            Tell the concierge your goal and it will suggest a bundle with savings, delivery fit, and resale value.
+          </div>
+        </section>
+
+        <section class="section-heading">
+          <div>
+            <p class="eyebrow">Shop</p>
+            <h2>Recommended products</h2>
+          </div>
+          <div class="filter-row" aria-label="Category filters">
+            <button class="filter active" data-category="all" type="button">All</button>
+            <button class="filter" data-category="workspace" type="button">Workspace</button>
+            <button class="filter" data-category="tech" type="button">Tech</button>
+            <button class="filter" data-category="lifestyle" type="button">Lifestyle</button>
+            <button class="filter" data-category="wellness" type="button">Wellness</button>
+          </div>
+        </section>
+
+        <section id="productGrid" class="product-grid" aria-label="Product grid"></section>
+
+        <section class="feature-strip">
+          <article>
+            <span class="feature-icon">AI</span>
+            <h3>Cart Concierge</h3>
+            <p>Creates complete shopping plans from goals, budget, style, and delivery needs.</p>
+          </article>
+          <article>
+            <span class="feature-icon">PP</span>
+            <h3>Product Passport</h3>
+            <p>Shows authenticity, warranty, seller trust, return risk, and future resale value.</p>
+          </article>
+          <article>
+            <span class="feature-icon">TW</span>
+            <h3>Trade-In Wallet</h3>
+            <p>Turns past purchases into future wallet credit through resale and exchange.</p>
+          </article>
+        </section>
+      </div>
+
+      <aside class="side-column" aria-label="Cart and trust panels">
+        <section class="cart-panel" id="cartPanel">
+          <div class="panel-title">
+            <div>
+              <p class="eyebrow">Live cart</p>
+              <h2>Checkout</h2>
+            </div>
+            <button id="clearCart" type="button" class="ghost-button">Clear</button>
+          </div>
+          <div id="cartItems" class="cart-items">
+            <p class="empty-note">Your cart is empty.</p>
+          </div>
+          <div class="delivery-options" aria-label="Delivery options">
+            <button class="delivery active" data-cost="4.99" data-label="Standard" type="button">
+              <strong>Standard</strong>
+              <span>$4.99</span>
+            </button>
+            <button class="delivery" data-cost="8.99" data-label="Fast" type="button">
+              <strong>Fast</strong>
+              <span>$8.99</span>
+            </button>
+            <button class="delivery" data-cost="1.99" data-label="Delay-To-Save" type="button">
+              <strong>Delay-To-Save</strong>
+              <span>$1.99</span>
+            </button>
+          </div>
+          <dl class="totals">
+            <div><dt>Subtotal</dt><dd id="subtotal">$0.00</dd></div>
+            <div><dt>Group discount</dt><dd id="discount">-$0.00</dd></div>
+            <div><dt>Delivery</dt><dd id="delivery">$4.99</dd></div>
+            <div class="grand"><dt>Total</dt><dd id="grandTotal">$0.00</dd></div>
+          </dl>
+          <button id="checkoutButton" class="primary-button" type="button">Place demo order</button>
+          <p id="checkoutMessage" class="status-line" aria-live="polite"></p>
+        </section>
+
+        <section class="passport-panel">
+          <p class="eyebrow">Product Passport</p>
+          <h2 id="passportTitle">Select a product</h2>
+          <div class="passport-grid">
+            <div><span>TrustScore</span><strong id="passportTrust">--</strong></div>
+            <div><span>Warranty</span><strong id="passportWarranty">--</strong></div>
+            <div><span>Resale</span><strong id="passportResale">--</strong></div>
+            <div><span>Carbon</span><strong id="passportCarbon">--</strong></div>
+          </div>
+          <p id="passportNote" class="status-line">Click any passport button to view trust details before checkout.</p>
+        </section>
+
+        <section class="social-panel">
+          <div class="panel-title">
+            <div>
+              <p class="eyebrow">Social Cart</p>
+              <h2>Group-buy deal</h2>
+            </div>
+            <span id="memberCount" class="pill">3 joined</span>
+          </div>
+          <div class="progress-track" aria-label="Group-buy progress">
+            <span id="groupProgress"></span>
+          </div>
+          <p id="groupMessage">Add one more member to unlock a 10 percent group discount.</p>
+          <button id="inviteButton" type="button" class="secondary-button">Simulate invite joined</button>
+        </section>
+
+        <section class="trade-panel">
+          <p class="eyebrow">Trade-In Wallet</p>
+          <h2>Future resale estimate</h2>
+          <label>
+            Product condition after 6 months
+            <input id="conditionRange" type="range" min="40" max="95" value="78">
+          </label>
+          <strong id="tradeEstimate">$0 wallet credit</strong>
+          <p class="status-line">Estimate uses cart price, condition, and resale eligibility.</p>
+        </section>
+      </aside>
+    </section>
+
+    <section id="sellerPanel" class="dashboard-band">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Seller and admin</p>
+          <h2>Growth Studio dashboard</h2>
+        </div>
+        <button type="button" class="secondary-button">Add product</button>
+      </div>
+      <div class="metric-grid">
+        <article><span>Revenue</span><strong>$42.8K</strong><small>+18 percent this month</small></article>
+        <article><span>TrustScore</span><strong>91</strong><small>Return rate improved</small></article>
+        <article><span>Pending orders</span><strong>128</strong><small>24 need packing</small></article>
+        <article><span>Admin alerts</span><strong>7</strong><small>Seller approvals and disputes</small></article>
+      </div>
+      <div class="insight-row">
+        <article>
+          <h3>AI growth recommendation</h3>
+          <p>Bundle the FlexLift Desk Riser with LoopSound Pods to increase average order value by an estimated 12 percent.</p>
+        </article>
+        <article>
+          <h3>Risk monitor</h3>
+          <p>GlowMist Humidifier has higher return risk due to unclear size photos. Add one lifestyle image and warranty note.</p>
+        </article>
+        <article>
+          <h3>Market signal</h3>
+          <p>Delay-To-Save orders are 31 percent cheaper to fulfill in the workspace category this week.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
